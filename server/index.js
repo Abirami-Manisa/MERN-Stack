@@ -6,10 +6,7 @@ import cors from "cors";
 import dataRoutes from "./routes/employee_details.js";
 import userRoutes from "./routes/users.js";
 
-import dotenv from "dotenv"
-
 const app = express();
-dotenv.config();
 
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
@@ -21,7 +18,7 @@ app.get("/", (req, res) => {
   res.send("Welcome to Employee Management System API");
 });
 
-const CONNECTION_URL = process.env.MONGO_URI;
+const CONNECTION_URL = "mongodb+srv://abirami:mernStackMock@cluster0.kwddoqi.mongodb.net/employee-database";
 const PORT = process.env.PORT || 5000;
 
 mongoose
