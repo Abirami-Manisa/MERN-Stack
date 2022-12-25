@@ -59,7 +59,7 @@ const Navbar = () => {
   };
 
   return (
-    <Box sx={{ flexGrow: 1 }} style={{position:"sticky",top:"5px",zIndex:"999"}}>
+    <Box sx={{ flexGrow: 1 }} style={{position:"sticky",top:"1px",zIndex:"99999"}}>
       <AppBar
         position="static"
         style={{ backgroundColor: "white", color: "purple" }}
@@ -124,7 +124,7 @@ const Navbar = () => {
 
                 <Menu
                   id="menu-appbar"
-                  style={{zIndex:"9999"}}
+                  style={{zIndex:"999999"}}
                   anchorEl={anchorEl}
                   anchorOrigin={{
                     vertical: "top",
@@ -155,7 +155,7 @@ const Navbar = () => {
 
                 <Menu
                   id="menu-appbar"
-                  style={{zIndex:"9999"}}
+                  style={{zIndex:"999999"}}
                   anchorEl={anchorEl}
                   anchorOrigin={{
                     vertical: "top",

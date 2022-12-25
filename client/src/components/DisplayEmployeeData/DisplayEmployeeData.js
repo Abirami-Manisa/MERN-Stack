@@ -23,7 +23,7 @@ const DisplayEmployeeData = ({ setCurrentId, setShowEdit, setShowDetails }) => {
   const user = JSON.parse(localStorage.getItem("profile"));
 
   return !data?.length ? (
-    <div align="center">
+    <div style={{display:"flex",flexDirection:"column",margin:"0 auto"}}>
       <CircularProgress color="secondary" />
       <h3 style={{ color: "white" }}>No data found</h3>
     </div>
